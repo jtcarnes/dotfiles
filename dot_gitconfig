@@ -1,0 +1,43 @@
+[core]
+	excludesfile = ~/.gitignore_global
+	pager = "delta --dark"
+	editor = "code --wait"
+[fetch]
+	prune = true
+[gpg]
+	program = gpg2
+	format = ssh
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+	line-numbers = true
+	side-by-side = true
+[merge]
+	conflictstyle = diff3
+[diff]
+	colorMoved = default
+[commit]
+	gpgsign = true
+[push]
+	autoSetupRemote = true
+
+[gpg "x509"]
+	program = gitsign
+
+[includeIf "hasconfig:remote.*.url:git@github.com:*/**"]
+	path = ~/.gitconfig_github
+
+[includeIf "hasconfig:remote.*.url:git@gitlab.com:*/**"]
+	path = ~/.gitconfig_gitlab
+[init]
+	defaultBranch = main
+[alias]
+	delmerged = "!git fetch && git branch --merged | egrep -v 'master|main' | xargs git branch -d"
+[help]
+        autocorrect = 1

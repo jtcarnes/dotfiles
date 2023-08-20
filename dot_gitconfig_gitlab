@@ -1,0 +1,4 @@
+[user]
+	signingkey = ~/.ssh/gitlab.pub
+	email = 9294190-jcarnes@users.noreply.gitlab.com
+	name = Joshua Carnes
