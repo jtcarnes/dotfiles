@@ -548,3 +548,5 @@ source git-aliases.nu
 source bazel.nu
 source direnv.nu
 source ~/.cache/carapace/init.nu
+
+alias vim = nvim
