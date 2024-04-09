@@ -43,3 +43,6 @@
         autocorrect = 1
 [url "ssh://git@github"]
   insteadOf = "https://github"
+[user]
+	email = "jtcarne2@gmail.com"
+
