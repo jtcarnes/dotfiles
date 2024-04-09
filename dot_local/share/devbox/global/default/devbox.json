@@ -14,7 +14,9 @@
     "fzf@latest",
     "zellij@latest",
     "oh-my-posh@latest",
-    "chezmoi@latest"
+    "chezmoi@latest",
+    "fira-code-nerdfont@latest",
+    "atuin@latest"
   ],
   "shell": {
     "init_hook": [
