@@ -1,0 +1,29 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetpack-io/devbox/0.10.3/.schema/devbox.schema.json",
+  "packages": [
+    "git@latest",
+    "lazygit@latest",
+    "neovim@latest",
+    "git-lfs@latest",
+    "git-interactive-rebase-tool@latest",
+    "bat@latest",
+    "eza@latest",
+    "delta@latest",
+    "ripgrep@latest",
+    "fd@latest",
+    "fzf@latest",
+    "zellij@latest",
+    "oh-my-posh@latest",
+    "chezmoi@latest"
+  ],
+  "shell": {
+    "init_hook": [
+      "echo 'Welcome to devbox!' > /dev/null"
+    ],
+    "scripts": {
+      "test": [
+        "echo \"Error: no test specified\" && exit 1"
+      ]
+    }
+  }
+}
