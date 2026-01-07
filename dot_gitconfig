@@ -41,8 +41,3 @@
 	delmerged = "!git fetch && git branch --merged | egrep -v 'master|main' | xargs git branch -d"
 [help]
         autocorrect = 1
-[url "ssh://git@github"]
-  insteadOf = "https://github"
-[user]
-	email = "jtcarne2@gmail.com"
-
