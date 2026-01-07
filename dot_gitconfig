@@ -22,8 +22,6 @@
 	conflictstyle = diff3
 [diff]
 	colorMoved = default
-[commit]
-	gpgsign = true
 [push]
 	autoSetupRemote = true
 
